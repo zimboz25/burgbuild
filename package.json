@@ -5,6 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "deploy": "npm run build && wrangler deploy",
+    "preview:cloudflare": "npm run build && wrangler dev",
     "start": "next start",
     "lint": "eslint",
     "generate:badges": "node scripts/generate-badges-2klab.mjs",
@@ -28,6 +30,7 @@
     "jsdom": "^29.1.1",
     "tailwindcss": "^4",
     "typescript": "^5",
-    "vitest": "^4.1.8"
+    "vitest": "^4.1.8",
+    "wrangler": "^4.100.0"
   }
 }
