@@ -1,0 +1,3802 @@
+[
+  {
+    "id": "deadeye",
+    "name": "Deadeye",
+    "category": "shooting",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 73
+              },
+              {
+                "attribute": "threePoint",
+                "value": 73
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 85
+              },
+              {
+                "attribute": "threePoint",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 92
+              },
+              {
+                "attribute": "threePoint",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 95
+              },
+              {
+                "attribute": "threePoint",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 99
+              },
+              {
+                "attribute": "threePoint",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "limitless-range",
+    "name": "Limitless Range",
+    "category": "shooting",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "threePoint",
+                "value": 83
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "threePoint",
+                "value": 89
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "threePoint",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "threePoint",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "threePoint",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "mini-marksman",
+    "name": "Mini Marksman",
+    "category": "shooting",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 75
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 71
+              },
+              {
+                "attribute": "threePoint",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 82
+              },
+              {
+                "attribute": "threePoint",
+                "value": 82
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 94
+              },
+              {
+                "attribute": "threePoint",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 97
+              },
+              {
+                "attribute": "threePoint",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 99
+              },
+              {
+                "attribute": "threePoint",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "set-shot-specialist",
+    "name": "Set Shot Specialist",
+    "category": "shooting",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 65
+              },
+              {
+                "attribute": "threePoint",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 78
+              },
+              {
+                "attribute": "threePoint",
+                "value": 78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 89
+              },
+              {
+                "attribute": "threePoint",
+                "value": 89
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 93
+              },
+              {
+                "attribute": "threePoint",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 98
+              },
+              {
+                "attribute": "threePoint",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "shifty-shooter",
+    "name": "Shifty Shooter",
+    "category": "shooting",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 83
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 76
+              },
+              {
+                "attribute": "threePoint",
+                "value": 76
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 87
+              },
+              {
+                "attribute": "threePoint",
+                "value": 87
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 91
+              },
+              {
+                "attribute": "threePoint",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 96
+              },
+              {
+                "attribute": "threePoint",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "midRange",
+                "value": 99
+              },
+              {
+                "attribute": "threePoint",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "ankle-assassin",
+    "name": "Ankle Assassin",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 82
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 86
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "bail-out",
+    "name": "Bail Out",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "break-starter",
+    "name": "Break Starter",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 87
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "dimer",
+    "name": "Dimer",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 55
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 82
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "handles-for-days",
+    "name": "Handles For Days",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 84
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 81
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "lightning-launch",
+    "name": "Lightning Launch",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 83
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speedWithBall",
+                "value": 68
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speedWithBall",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speedWithBall",
+                "value": 86
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speedWithBall",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speedWithBall",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "strong-handle",
+    "name": "Strong Handle",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 83
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 60
+              },
+              {
+                "attribute": "strength",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 67
+              },
+              {
+                "attribute": "strength",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 73
+              },
+              {
+                "attribute": "strength",
+                "value": 73
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 77
+              },
+              {
+                "attribute": "strength",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 80
+              },
+              {
+                "attribute": "strength",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "unpluckable",
+    "name": "Unpluckable",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 70
+              },
+              {
+                "attribute": "postControl",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 80
+              },
+              {
+                "attribute": "postControl",
+                "value": 86
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 92
+              },
+              {
+                "attribute": "postControl",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 96
+              },
+              {
+                "attribute": "postControl",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "ballHandle",
+                "value": 99
+              },
+              {
+                "attribute": "postControl",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "versatile-visionary",
+    "name": "Versatile Visionary",
+    "category": "playmaking",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 76
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "passAccuracy",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "aerial-wizard",
+    "name": "Aerial Wizard",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 64
+              },
+              {
+                "attribute": "standingDunk",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 70
+              },
+              {
+                "attribute": "standingDunk",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 80
+              },
+              {
+                "attribute": "standingDunk",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 89
+              },
+              {
+                "attribute": "standingDunk",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 97
+              },
+              {
+                "attribute": "standingDunk",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "float-game",
+    "name": "Float Game",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 68
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 78
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 86
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 88
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 92
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 98
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "hook-specialist",
+    "name": "Hook Specialist",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 60
+              },
+              {
+                "attribute": "postControl",
+                "value": 61
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 75
+              },
+              {
+                "attribute": "postControl",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 87
+              },
+              {
+                "attribute": "postControl",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 94
+              },
+              {
+                "attribute": "postControl",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 99
+              },
+              {
+                "attribute": "postControl",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "layup-mixmaster",
+    "name": "Layup Mixmaster",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 83
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingLayup",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingLayup",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingLayup",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingLayup",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingLayup",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "paint-prodigy",
+    "name": "Paint Prodigy",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 75,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 73
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "closeShot",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "physical-finisher",
+    "name": "Physical Finisher",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 60
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 67
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 75
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 83
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 97
+              },
+              {
+                "attribute": "drivingLayup",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "post-fade-phenom",
+    "name": "Post Fade Phenom",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 60
+              },
+              {
+                "attribute": "midRange",
+                "value": 61
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 70
+              },
+              {
+                "attribute": "midRange",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 79
+              },
+              {
+                "attribute": "midRange",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 84
+              },
+              {
+                "attribute": "midRange",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 90
+              },
+              {
+                "attribute": "midRange",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "post-powerhouse",
+    "name": "Post Powerhouse",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 76,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 64
+              },
+              {
+                "attribute": "strength",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 75
+              },
+              {
+                "attribute": "strength",
+                "value": 79
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 85
+              },
+              {
+                "attribute": "strength",
+                "value": 86
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 93
+              },
+              {
+                "attribute": "strength",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 98
+              },
+              {
+                "attribute": "strength",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "post-up-poet",
+    "name": "Post-Up Poet",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 72,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 67
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 77
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 87
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "postControl",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "posterizer",
+    "name": "Posterizer",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 73
+              },
+              {
+                "attribute": "vertical",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 87
+              },
+              {
+                "attribute": "vertical",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 93
+              },
+              {
+                "attribute": "vertical",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 96
+              },
+              {
+                "attribute": "vertical",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "drivingDunk",
+                "value": 99
+              },
+              {
+                "attribute": "vertical",
+                "value": 90
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "rise-up",
+    "name": "Rise Up",
+    "category": "finishing",
+    "heightGate": {
+      "type": "range",
+      "minInches": 78,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "standingDunk",
+                "value": 72
+              },
+              {
+                "attribute": "vertical",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "standingDunk",
+                "value": 81
+              },
+              {
+                "attribute": "vertical",
+                "value": 62
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "standingDunk",
+                "value": 90
+              },
+              {
+                "attribute": "vertical",
+                "value": 66
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "standingDunk",
+                "value": 95
+              },
+              {
+                "attribute": "vertical",
+                "value": 69
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "standingDunk",
+                "value": 99
+              },
+              {
+                "attribute": "vertical",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "challenger",
+    "name": "Challenger",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 83
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 82
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "glove",
+    "name": "Glove",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 84
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 67
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 79
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "high-flying-denier",
+    "name": "High-Flying Denier",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 75,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "block",
+                "value": 68
+              },
+              {
+                "attribute": "vertical",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "block",
+                "value": 78
+              },
+              {
+                "attribute": "vertical",
+                "value": 74
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "block",
+                "value": 88
+              },
+              {
+                "attribute": "vertical",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "block",
+                "value": 92
+              },
+              {
+                "attribute": "vertical",
+                "value": 83
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "block",
+                "value": 99
+              },
+              {
+                "attribute": "vertical",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "immovable-enforcer",
+    "name": "Immovable Enforcer",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 62
+              },
+              {
+                "attribute": "strength",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 72
+              },
+              {
+                "attribute": "strength",
+                "value": 82
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 84
+              },
+              {
+                "attribute": "strength",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 89
+              },
+              {
+                "attribute": "strength",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 94
+              },
+              {
+                "attribute": "strength",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "interceptor",
+    "name": "Interceptor",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 73
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "steal",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "off-ball-pest",
+    "name": "Off-Ball Pest",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 69
+              },
+              {
+                "attribute": "perimeterDefense",
+                "value": 58
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 76
+              },
+              {
+                "attribute": "perimeterDefense",
+                "value": 68
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 85
+              },
+              {
+                "attribute": "perimeterDefense",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 94
+              },
+              {
+                "attribute": "perimeterDefense",
+                "value": 87
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 97
+              },
+              {
+                "attribute": "perimeterDefense",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "on-ball-menace",
+    "name": "On-Ball Menace",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 81
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 74
+              },
+              {
+                "attribute": "agility",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 85
+              },
+              {
+                "attribute": "agility",
+                "value": 76
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 91
+              },
+              {
+                "attribute": "agility",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 96
+              },
+              {
+                "attribute": "agility",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 99
+              },
+              {
+                "attribute": "agility",
+                "value": 86
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "paint-patroller",
+    "name": "Paint Patroller",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 78,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 60
+              },
+              {
+                "attribute": "block",
+                "value": 74
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 70
+              },
+              {
+                "attribute": "block",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 77
+              },
+              {
+                "attribute": "block",
+                "value": 93
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 84
+              },
+              {
+                "attribute": "block",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 89
+              },
+              {
+                "attribute": "block",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "pick-dodger",
+    "name": "Pick Dodger",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 82
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 73
+              },
+              {
+                "attribute": "agility",
+                "value": 71
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 83
+              },
+              {
+                "attribute": "agility",
+                "value": 75
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 90
+              },
+              {
+                "attribute": "agility",
+                "value": 79
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 97
+              },
+              {
+                "attribute": "agility",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "perimeterDefense",
+                "value": 99
+              },
+              {
+                "attribute": "agility",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "post-lockdown",
+    "name": "Post Lockdown",
+    "category": "defense",
+    "heightGate": {
+      "type": "range",
+      "minInches": 77,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 74
+              },
+              {
+                "attribute": "strength",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 82
+              },
+              {
+                "attribute": "strength",
+                "value": 78
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 88
+              },
+              {
+                "attribute": "strength",
+                "value": 84
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 93
+              },
+              {
+                "attribute": "strength",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "interiorDefense",
+                "value": 99
+              },
+              {
+                "attribute": "strength",
+                "value": 97
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "boxout-beast",
+    "name": "Boxout Beast",
+    "category": "rebounding",
+    "heightGate": {
+      "type": "range",
+      "minInches": 75,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 55
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 55
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 70
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 85
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 85
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 94
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 94
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 98
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 98
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "rebound-chaser",
+    "name": "Rebound Chaser",
+    "category": "rebounding",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 60
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 60
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 80
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 80
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 92
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 92
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 96
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "or",
+            "requirements": [
+              {
+                "attribute": "offensiveRebound",
+                "value": 99
+              },
+              {
+                "attribute": "defensiveRebound",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "brick-wall",
+    "name": "Brick Wall",
+    "category": "physical",
+    "heightGate": {
+      "type": "range",
+      "minInches": 77,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 72
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 83
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 91
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 95
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "strength",
+                "value": 99
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "slippery-off-ball",
+    "name": "Slippery Off-Ball",
+    "category": "physical",
+    "heightGate": {
+      "type": "range",
+      "minInches": 69,
+      "maxInches": 81
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speed",
+                "value": 57
+              },
+              {
+                "attribute": "agility",
+                "value": 57
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speed",
+                "value": 73
+              },
+              {
+                "attribute": "agility",
+                "value": 65
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speed",
+                "value": 85
+              },
+              {
+                "attribute": "agility",
+                "value": 77
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speed",
+                "value": 92
+              },
+              {
+                "attribute": "agility",
+                "value": 88
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "speed",
+                "value": 99
+              },
+              {
+                "attribute": "agility",
+                "value": 96
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  },
+  {
+    "id": "pogo-stick",
+    "name": "Pogo Stick",
+    "category": "physical",
+    "heightGate": {
+      "type": "range",
+      "minInches": 76,
+      "maxInches": 88
+    },
+    "tiers": [
+      {
+        "tier": "bronze",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "vertical",
+                "value": 63
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "silver",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "vertical",
+                "value": 70
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "gold",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "vertical",
+                "value": 77
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "hof",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "vertical",
+                "value": 83
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tier": "legend",
+        "statGroups": [
+          {
+            "logic": "and",
+            "requirements": [
+              {
+                "attribute": "vertical",
+                "value": 88
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "source": "nba2klab"
+  }
+]

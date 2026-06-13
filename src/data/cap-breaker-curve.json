@@ -1,0 +1,11 @@
+{
+  "description": "Heuristic cap breaker boost based on gap to absolute max potential",
+  "rules": [
+    { "minGap": 0, "maxGap": 2, "boost": 1 },
+    { "minGap": 3, "maxGap": 10, "boost": 2 },
+    { "minGap": 11, "maxGap": 20, "boost": 4 },
+    { "minGap": 21, "maxGap": 35, "boost": 8 },
+    { "minGap": 36, "maxGap": 99, "boost": 12 }
+  ],
+  "maxPerAttribute": 5
+}

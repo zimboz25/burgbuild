@@ -1,0 +1,56 @@
+{
+  "wingspanOffsetMin": -6,
+  "wingspanOffsetMax": 6,
+  "positions": [
+    {
+      "position": "PG",
+      "heightMinInches": 67,
+      "heightMaxInches": 77,
+      "weightMinLbs": 150,
+      "weightMaxLbs": 220,
+      "defaultWeightLbs": 180,
+      "wingspanOffsetMin": -6,
+      "wingspanOffsetMax": 6
+    },
+    {
+      "position": "SG",
+      "heightMinInches": 72,
+      "heightMaxInches": 80,
+      "weightMinLbs": 160,
+      "weightMaxLbs": 230,
+      "defaultWeightLbs": 190,
+      "wingspanOffsetMin": -6,
+      "wingspanOffsetMax": 6
+    },
+    {
+      "position": "SF",
+      "heightMinInches": 75,
+      "heightMaxInches": 82,
+      "weightMinLbs": 180,
+      "weightMaxLbs": 250,
+      "defaultWeightLbs": 210,
+      "wingspanOffsetMin": -6,
+      "wingspanOffsetMax": 6
+    },
+    {
+      "position": "PF",
+      "heightMinInches": 78,
+      "heightMaxInches": 84,
+      "weightMinLbs": 200,
+      "weightMaxLbs": 270,
+      "defaultWeightLbs": 230,
+      "wingspanOffsetMin": -6,
+      "wingspanOffsetMax": 6
+    },
+    {
+      "position": "C",
+      "heightMinInches": 80,
+      "heightMaxInches": 88,
+      "weightMinLbs": 220,
+      "weightMaxLbs": 300,
+      "defaultWeightLbs": 250,
+      "wingspanOffsetMin": -6,
+      "wingspanOffsetMax": 6
+    }
+  ]
+}

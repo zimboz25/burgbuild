@@ -1,0 +1,12 @@
+{
+  "description": "Approximate VC cost per +1 attribute point by current rating bracket",
+  "brackets": [
+    { "minRating": 25, "maxRating": 59, "vcPerPoint": 350 },
+    { "minRating": 60, "maxRating": 69, "vcPerPoint": 550 },
+    { "minRating": 70, "maxRating": 79, "vcPerPoint": 850 },
+    { "minRating": 80, "maxRating": 84, "vcPerPoint": 1200 },
+    { "minRating": 85, "maxRating": 89, "vcPerPoint": 1800 },
+    { "minRating": 90, "maxRating": 94, "vcPerPoint": 2600 },
+    { "minRating": 95, "maxRating": 99, "vcPerPoint": 3800 }
+  ]
+}
