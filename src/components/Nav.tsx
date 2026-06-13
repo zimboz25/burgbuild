@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { NavAuth } from "@/components/auth/NavAuth";
 import {
   GAME_THEMES,
   getGameThemeForPath,
@@ -10,13 +11,17 @@ import {
 const nba2k26Links = [
   { href: "/build", label: "Build" },
   { href: "/results", label: "Results" },
+  { href: "/builds", label: "My Builds" },
   { href: "/calibrate", label: "Calibrate" },
 ];
 
 const valorantLinks = [{ href: "/valorant/lineups", label: "Lineups" }];
 
 function isNba2k26Route(pathname: string) {
-  return nba2k26Links.some((link) => pathname.startsWith(link.href));
+  return (
+    nba2k26Links.some((link) => pathname.startsWith(link.href)) ||
+    pathname.startsWith("/auth")
+  );
 }
 
 function isValorantRoute(pathname: string) {
@@ -97,6 +102,8 @@ export function Nav() {
             ))}
           </>
         )}
+
+        <NavAuth />
       </div>
     </nav>
   );

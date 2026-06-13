@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Nav } from "@/components/Nav";
+import { Providers } from "@/components/Providers";
 import { GameThemeSync } from "@/components/game-theme-sync";
 import "./globals.css";
 
@@ -34,9 +35,11 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
-        <GameThemeSync />
-        <Nav />
-        {children}
+        <Providers>
+          <GameThemeSync />
+          <Nav />
+          {children}
+        </Providers>
       </body>
     </html>
   );

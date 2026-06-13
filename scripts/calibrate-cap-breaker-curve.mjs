@@ -204,48 +204,6 @@ console.log("v4 hybrid", simulate(predictV4));
 console.log("lookup mode", simulate(predictLookupMode));
 console.log("v5 lookup+ceil fallback", simulate(predictV5));
 
-const key = new Map();
-for (const t of allTriples) {
-  const k = `${t.remaining}:${t.slotsLeft}`;
-  if (!key.has(k)) key.set(k, []);
-  key.get(k).push(t.boost);
-}
-
-// Export lookup table for cap-breaker-lookup.json
-const lookupEntries = [];
-for (const [k, vals] of key.entries()) {
-  const [remaining, slotsLeft] = k.split(":").map(Number);
-  const counts = new Map();
-  for (const v of vals) counts.set(v, (counts.get(v) ?? 0) + 1);
-  let boost = vals[0];
-  let bestCount = 0;
-  for (const [b, c] of counts) {
-    if (c > bestCount) {
-      bestCount = c;
-      boost = b;
-    }
-  }
-  lookupEntries.push({ remaining, slotsLeft, boost, samples: vals.length });
-}
-lookupEntries.sort((a, b) => b.remaining - a.remaining || b.slotsLeft - a.slotsLeft);
-
-const outPath = path.join("src", "data", "cap-breaker-lookup.json");
-fs.writeFileSync(
-  outPath,
-  JSON.stringify(
-    {
-      description:
-        "Empirical cap breaker boost by remaining headroom and slots left (from in-game calibration)",
-      maxSingleBoost: 15,
-      maxPerAttribute: 5,
-      entries: lookupEntries,
-    },
-    null,
-    2,
-  ) + "\n",
-);
-console.log("Wrote", outPath, "with", lookupEntries.length, "entries");
-
 const table = [...key.entries()]
   .map(([k, vals]) => {
     const [remaining, slotsLeft] = k.split(":").map(Number);

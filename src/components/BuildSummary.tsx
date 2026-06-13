@@ -1,6 +1,7 @@
 "use client";
 
 import { useMemo } from "react";
+import { CloudSaveStatus } from "@/components/auth/CloudSaveStatus";
 import { useBuildStore } from "@/lib/store/build-store";
 import { lookupMaxPotentials } from "@/lib/engines/potential-lookup";
 import { inchesToFeetInches } from "@/lib/constants/attributes";
@@ -50,6 +51,7 @@ export function BuildSummary() {
             MC Attribute Upgrades
           </p>
           <h1 className="text-lg font-bold text-white">{build.name}</h1>
+          <CloudSaveStatus />
           <p className="text-xs text-white/50">
             Earn VC to upgrade toward your build caps
           </p>

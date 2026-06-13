@@ -259,5 +259,63 @@
       "vertical": 96,
       "stamina": 99
     }
+  },
+  {
+    "heightInches": 79,
+    "weightLbs": 225,
+    "wingspanInches": 85,
+    "maxPotentials": {
+      "closeShot": 92,
+      "drivingLayup": 90,
+      "drivingDunk": 95,
+      "standingDunk": 83,
+      "postControl": 91,
+      "midRange": 87,
+      "threePoint": 81,
+      "freeThrow": 92,
+      "passAccuracy": 76,
+      "ballHandle": 86,
+      "speedWithBall": 80,
+      "interiorDefense": 92,
+      "perimeterDefense": 97,
+      "steal": 84,
+      "block": 81,
+      "offensiveRebound": 82,
+      "defensiveRebound": 86,
+      "speed": 85,
+      "agility": 84,
+      "strength": 77,
+      "vertical": 80,
+      "stamina": 99
+    }
+  },
+  {
+    "heightInches": 81,
+    "weightLbs": 185,
+    "wingspanInches": 82,
+    "maxPotentials": {
+      "closeShot": 83,
+      "drivingLayup": 77,
+      "drivingDunk": 93,
+      "standingDunk": 81,
+      "postControl": 84,
+      "midRange": 85,
+      "threePoint": 90,
+      "freeThrow": 90,
+      "passAccuracy": 77,
+      "ballHandle": 80,
+      "speedWithBall": 75,
+      "interiorDefense": 75,
+      "perimeterDefense": 90,
+      "steal": 78,
+      "block": 83,
+      "offensiveRebound": 75,
+      "defensiveRebound": 77,
+      "speed": 86,
+      "agility": 86,
+      "strength": 78,
+      "vertical": 83,
+      "stamina": 99
+    }
   }
 ]

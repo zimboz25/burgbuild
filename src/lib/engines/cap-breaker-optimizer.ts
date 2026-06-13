@@ -35,6 +35,7 @@ function simulateAllocation(
   maxPotentials: Attributes,
   allocations: { key: AttributeKey; count: number }[],
 ): CapBreakerPlan | null {
+  const allocatedCaps = getAllocatedCaps(build);
   const attrs = { ...build.currentAttributes };
   const applied = { ...(build.capBreakersApplied ?? {}) };
   let universalLeft = build.capBreakers.universal;
@@ -71,7 +72,13 @@ function simulateAllocation(
       } else {
         return null;
       }
-      to = applyCapBreaker(to, maxPotentials[key], already + i);
+      to = applyCapBreaker(
+        allocatedCaps[key],
+        to,
+        maxPotentials[key],
+        already + i,
+        key,
+      );
     }
 
     planAllocations.push({
