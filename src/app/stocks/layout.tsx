@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Valorant",
+  title: "Markets",
 };
 
-export default function ValorantLayout({
+export default function StocksLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
   return (
-    <div className="bg-valorant-panel flex min-h-full flex-1 flex-col">
+    <div className="bg-stocks-panel flex min-h-full flex-1 flex-col">
       {children}
     </div>
   );

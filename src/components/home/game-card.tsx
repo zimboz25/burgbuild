@@ -29,28 +29,14 @@ export function GameCard({ game, tool }: GameCardProps) {
   const theme = GAME_THEMES[game.theme];
 
   return (
-    <article
-      className="rounded-xl border p-6 backdrop-blur-sm"
-      style={{
-        backgroundColor: theme.cardBg,
-        borderColor: theme.cardBorder,
-      }}
-    >
-      <p
-        className="mb-2 text-xs font-bold uppercase tracking-[0.2em]"
-        style={{ color: theme.accent }}
-      >
+    <article className="rounded-xl border border-border bg-card p-6 text-card-foreground shadow-sm">
+      <p className="mb-2 text-xs font-bold uppercase tracking-[0.2em] text-primary">
         {game.title}
       </p>
-      <h3
-        className="mb-2 text-2xl font-semibold"
-        style={{ color: theme.text }}
-      >
+      <h3 className="mb-2 text-2xl font-semibold text-foreground">
         {tool.title}
       </h3>
-      <p className="mb-6" style={{ color: theme.textMuted }}>
-        {tool.description}
-      </p>
+      <p className="mb-6 text-muted-foreground">{tool.description}</p>
       <div className="mb-6 flex flex-wrap gap-4">
         {tool.comingSoon || !tool.href ? (
           <span
@@ -75,10 +61,10 @@ export function GameCard({ game, tool }: GameCardProps) {
           </Link>
         )}
       </div>
-      <ul className="space-y-2 text-sm" style={{ color: theme.textMuted }}>
+      <ul className="space-y-2 text-sm text-muted-foreground">
         {tool.features.map((feature) => (
           <li key={feature} className="flex gap-2">
-            <span style={{ color: theme.accent }}>•</span>
+            <span className="text-primary">•</span>
             <span>{feature}</span>
           </li>
         ))}

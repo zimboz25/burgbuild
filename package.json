@@ -12,6 +12,7 @@
     "generate:badges": "node scripts/generate-badges-2klab.mjs",
     "fetch:valorant": "node scripts/fetch-strats-data.mjs",
     "calibrate:cap-breakers": "node scripts/calibrate-cap-breaker-curve.mjs",
+    "train:signal-model": "node scripts/train-signal-model.mjs",
     "test": "vitest run",
     "test:watch": "vitest"
   },

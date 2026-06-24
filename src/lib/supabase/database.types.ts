@@ -30,6 +30,36 @@ export interface Database {
         };
         Relationships: [];
       };
+      watchlists: {
+        Row: {
+          id: string;
+          user_id: string;
+          market_id: string;
+          symbol: string;
+          added_at: string;
+          added_price: number | null;
+          notes: string | null;
+        };
+        Insert: {
+          id?: string;
+          user_id: string;
+          market_id: string;
+          symbol: string;
+          added_at?: string;
+          added_price?: number | null;
+          notes?: string | null;
+        };
+        Update: {
+          id?: string;
+          user_id?: string;
+          market_id?: string;
+          symbol?: string;
+          added_at?: string;
+          added_price?: number | null;
+          notes?: string | null;
+        };
+        Relationships: [];
+      };
     };
     Views: Record<string, never>;
     Functions: Record<string, never>;
@@ -39,6 +69,7 @@ export interface Database {
 }
 
 export type SavedBuildRow = Database["public"]["Tables"]["builds"]["Row"];
+export type WatchlistRow = Database["public"]["Tables"]["watchlists"]["Row"];
 
 export interface SavedBuildSummary {
   id: string;

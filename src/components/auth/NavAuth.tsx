@@ -13,7 +13,7 @@ export function NavAuth() {
 
   if (loading) {
     return (
-      <span className="ml-auto text-xs uppercase tracking-wide text-white/40">
+      <span className="ml-auto text-xs uppercase tracking-wide text-muted-foreground/60">
         …
       </span>
     );
@@ -23,7 +23,7 @@ export function NavAuth() {
     return (
       <Link
         href={`/auth?next=${encodeURIComponent(pathname)}`}
-        className="ml-auto text-xs uppercase tracking-wide text-white/60 hover:text-white"
+        className="ml-auto text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground"
       >
         Sign In
       </Link>
@@ -34,11 +34,11 @@ export function NavAuth() {
     <div className="ml-auto flex items-center gap-4">
       <Link
         href="/builds"
-        className="text-xs uppercase tracking-wide text-white/60 hover:text-white"
+        className="text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground"
       >
         My Builds
       </Link>
-      <span className="hidden text-xs text-white/40 sm:inline">
+      <span className="hidden text-xs text-muted-foreground/70 sm:inline">
         {user.email}
       </span>
       <button
@@ -48,7 +48,7 @@ export function NavAuth() {
           useBuildStore.getState().setCloudSaveStatus("idle");
           void signOut();
         }}
-        className="text-xs uppercase tracking-wide text-white/60 hover:text-white"
+        className="text-xs uppercase tracking-wide text-muted-foreground hover:text-foreground"
       >
         Sign Out
       </button>

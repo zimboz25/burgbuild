@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Nav } from "@/components/Nav";
 import { Providers } from "@/components/Providers";
-import { GameThemeSync } from "@/components/game-theme-sync";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -31,12 +30,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      data-game-theme="hub"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} dark h-full antialiased`}
     >
       <body className="flex min-h-full flex-col bg-background text-foreground">
         <Providers>
-          <GameThemeSync />
           <Nav />
           {children}
         </Providers>

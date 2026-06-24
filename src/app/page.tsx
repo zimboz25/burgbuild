@@ -8,7 +8,7 @@ export default function HomePage() {
       <main className="mx-auto flex min-h-0 flex-1 max-w-3xl flex-col px-4 py-16">
         <h1 className="mb-4 text-4xl font-bold text-foreground">BurgBuild</h1>
         <p className="mb-12 text-lg text-muted">
-          Tools and guides for the games we play.
+          Tools and guides for the games we play — and the markets we watch.
         </p>
 
         <div className="space-y-10">

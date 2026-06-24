@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "featureOrder": [
+    "rsi14",
+    "macdHistogram",
+    "belowSma50",
+    "rangePosition",
+    "return5d",
+    "return20d",
+    "volatility20d"
+  ],
+  "bias": -0.011356708007461101,
+  "weights": {
+    "rsi14": 0.729771019954533,
+    "macdHistogram": -0.4678807865886194,
+    "belowSma50": -2.446475632181216,
+    "rangePosition": -5.4086720616140465,
+    "return5d": -0.19989940971353976,
+    "return20d": 0.06101529520692229,
+    "volatility20d": 0.6991755312560097
+  },
+  "buyThreshold": 0.6,
+  "sellThreshold": 0.4,
+  "trainedAt": "2026-06-24T05:03:15.064Z",
+  "sampleCount": 844
+}

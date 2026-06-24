@@ -44,4 +44,39 @@ export const homeGames: GameSection[] = [
       },
     ],
   },
+  {
+    id: "stocks",
+    title: "Markets",
+    theme: "stocks",
+    tools: [
+      {
+        name: "buy-timing",
+        title: "Buy Timing Scanner",
+        description:
+          "Scan ASX 200, S&P 500, and NASDAQ 100 with four trading bots and consensus scoring to surface stronger buy windows.",
+        href: "/stocks/buy-timing",
+        cta: "Open Scanner",
+        features: [
+          "ASX 200, S&P 500, and NASDAQ 100 market switcher",
+          "Four trading bots with bullish consensus scoring",
+          "RSI, SMA, MACD, and ML model signals",
+          "Sector filters with ranked suggestions and detail panel",
+        ],
+      },
+      {
+        name: "watchlist",
+        title: "Watchlist",
+        description:
+          "Save symbols to track price change since added and monitor bot consensus across technical, momentum, mean reversion, and ML models.",
+        href: "/stocks/watchlist",
+        cta: "Open Watchlist",
+        features: [
+          "Track symbols across ASX, S&P 500, and NASDAQ 100",
+          "Price change since you added each symbol",
+          "Per-stock bot breakdown and consensus badges",
+          "Local save with optional cloud sync when signed in",
+        ],
+      },
+    ],
+  },
 ];
