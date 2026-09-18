@@ -70,13 +70,22 @@ export interface SparkSeries {
   symbol: string;
   meta: SparkQuoteMeta;
   closes: number[];
+  /** Session highs aligned with `closes` (PlayBit EMA / OHLC). Falls back to closes when unavailable. */
+  highs: number[];
   /** Unix timestamps (seconds), aligned with `closes` */
   timestamps: number[];
 }
 
 export type BotSignal = "buy" | "hold" | "sell";
 
-export type BotId = "technical" | "momentum" | "mean-reversion" | "ml";
+export type BotId =
+  | "technical"
+  | "momentum"
+  | "mean-reversion"
+  | "ml"
+  | "playbit";
+
+export type PlayBitRegime = "above" | "below" | "inside";
 
 export interface BotResult {
   botId: BotId;

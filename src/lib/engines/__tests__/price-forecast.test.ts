@@ -27,6 +27,7 @@ function makeSeries(closes: number[]): SparkSeries {
       fiftyTwoWeekHigh: Math.max(...closes),
     },
     closes,
+    highs: closes.map((close) => close * 1.01),
     timestamps: makeTimestamps(closes.length),
   };
 }
@@ -38,7 +39,7 @@ describe("buildForecastOutlook", () => {
     const outlook = buildForecastOutlook(series, consensus);
 
     expect(outlook.consensus).toHaveLength(3);
-    expect(outlook.byBot).toHaveLength(4);
+    expect(outlook.byBot).toHaveLength(5);
     expect(outlook.projectionPath.length).toBeGreaterThan(30);
   });
 

@@ -49,6 +49,7 @@ export function sliceSeriesByRange(
     .map((timestamp, index) => ({
       timestamp,
       close: series.closes[index],
+      high: series.highs[index] ?? series.closes[index],
     }))
     .filter((point) => point.timestamp >= cutoff);
 
@@ -57,6 +58,7 @@ export function sliceSeriesByRange(
   return {
     ...series,
     closes: pairs.map((point) => point.close),
+    highs: pairs.map((point) => point.high),
     timestamps: pairs.map((point) => point.timestamp),
   };
 }

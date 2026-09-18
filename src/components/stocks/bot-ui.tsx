@@ -1,4 +1,5 @@
 import type { BotConsensus, BotResult, BotSignal } from "@/lib/types/stocks";
+import { BOT_COUNT } from "@/lib/engines/bots/consensus";
 
 const SIGNAL_CLASSES: Record<BotSignal, string> = {
   buy: "border-emerald-500/40 bg-emerald-500/15 text-emerald-400",
@@ -65,7 +66,7 @@ export function BotConsensusBadge({
       }`}
       style={strong ? { color: "#34d399" } : undefined}
     >
-      {consensus.bullishCount}/4 bullish
+      {consensus.bullishCount}/{BOT_COUNT} bullish
     </span>
   );
 }

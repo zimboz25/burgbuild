@@ -53,13 +53,13 @@ export const homeGames: GameSection[] = [
         name: "buy-timing",
         title: "Buy Timing Scanner",
         description:
-          "Scan ASX 200, S&P 500, and NASDAQ 100 with four trading bots and consensus scoring to surface stronger buy windows.",
+          "Scan ASX 200, S&P 500, and NASDAQ 100 with five trading bots and consensus scoring to surface stronger buy windows.",
         href: "/stocks/buy-timing",
         cta: "Open Scanner",
         features: [
           "ASX 200, S&P 500, and NASDAQ 100 market switcher",
-          "Four trading bots with bullish consensus scoring",
-          "RSI, SMA, MACD, and ML model signals",
+          "Five trading bots with bullish consensus scoring",
+          "PlayBit EMA channel, RSI, SMA, MACD, and ML signals",
           "Sector filters with ranked suggestions and detail panel",
         ],
       },
@@ -67,7 +67,7 @@ export const homeGames: GameSection[] = [
         name: "watchlist",
         title: "Watchlist",
         description:
-          "Save symbols to track price change since added and monitor bot consensus across technical, momentum, mean reversion, and ML models.",
+          "Save symbols to track price change since added and monitor bot consensus across technical, momentum, mean reversion, ML, and PlayBit EMA models.",
         href: "/stocks/watchlist",
         cta: "Open Watchlist",
         features: [

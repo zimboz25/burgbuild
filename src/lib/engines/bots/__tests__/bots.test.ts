@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { runMeanReversionBot } from "@/lib/engines/bots/mean-reversion-bot";
 import { runMomentumBot } from "@/lib/engines/bots/momentum-bot";
+import { runPlayBitBot } from "@/lib/engines/bots/playbit-bot";
 import { runTechnicalBot } from "@/lib/engines/bots/technical-bot";
 import { buildConsensus, runAllBots } from "@/lib/engines/bots/consensus";
 import { predictMlProbability } from "@/lib/engines/bots/ml-bot";
@@ -16,6 +17,7 @@ function makeTimestamps(count: number): number[] {
 function makeSeries(
   closes: number[],
   meta: Partial<SparkSeries["meta"]> = {},
+  highs?: number[],
 ): SparkSeries {
   return {
     symbol: "TEST",
@@ -28,6 +30,7 @@ function makeSeries(
       ...meta,
     },
     closes,
+    highs: highs ?? closes.map((close) => close * 1.01),
     timestamps: makeTimestamps(closes.length),
   };
 }
@@ -77,15 +80,15 @@ describe("technical bot", () => {
 });
 
 describe("consensus", () => {
-  it("aggregates four bot results", () => {
+  it("aggregates five bot results", () => {
     const series = makeSeries(makeDecliningCloses(260, 90), {
       fiftyTwoWeekLow: 30,
       fiftyTwoWeekHigh: 100,
     });
     const results = runAllBots(series);
-    expect(results).toHaveLength(4);
+    expect(results).toHaveLength(5);
     const consensus = buildConsensus(results);
-    expect(consensus.results).toHaveLength(4);
+    expect(consensus.results).toHaveLength(5);
     expect(consensus.consensusScore).toBeGreaterThanOrEqual(0);
     expect(consensus.consensusScore).toBeLessThanOrEqual(100);
   });
@@ -99,7 +102,24 @@ describe("consensus", () => {
     );
     const consensus = buildConsensus(results);
     expect(consensus.bullishCount).toBeGreaterThanOrEqual(0);
-    expect(consensus.bullishCount).toBeLessThanOrEqual(4);
+    expect(consensus.bullishCount).toBeLessThanOrEqual(5);
+  });
+});
+
+describe("playbit bot", () => {
+  it("signals buy when price is above the channel", () => {
+    const closes = makeRisingCloses(260, 40);
+    const highs = closes.map((close) => close * 1.005);
+    const result = runPlayBitBot(makeSeries(closes, {}, highs));
+    expect(result.signal).toBe("buy");
+    expect(result.botId).toBe("playbit");
+  });
+
+  it("signals sell when price is below the channel", () => {
+    const closes = makeDecliningCloses(260, 160);
+    const highs = closes.map((close) => close * 1.002);
+    const result = runPlayBitBot(makeSeries(closes, {}, highs));
+    expect(result.signal).toBe("sell");
   });
 });
 

@@ -14,14 +14,16 @@ import { analyzeTechnicalSignals, pctReturn, scoreBuyTiming, sma } from "@/lib/e
 import { predictMlProbability } from "@/lib/engines/bots/ml-bot";
 import { extractMlFeatures } from "@/lib/engines/bots/features";
 import { BOT_LABELS } from "@/lib/engines/bots/consensus";
+import { analyzePlayBitChannel } from "@/lib/engines/playbit-ema";
 
 const HORIZON_KEYS: ForecastHorizon[] = ["5d", "20d", "60d"];
 
 const BOT_FORECAST_WEIGHTS: Record<BotId, number> = {
-  technical: 0.3,
-  momentum: 0.25,
-  "mean-reversion": 0.25,
-  ml: 0.2,
+  technical: 0.25,
+  momentum: 0.2,
+  "mean-reversion": 0.2,
+  ml: 0.15,
+  playbit: 0.2,
 };
 
 function dailyVolatility(closes: number[]): number {
@@ -183,6 +185,35 @@ function mlForecast(
   );
 }
 
+function playBitForecast(
+  price: number,
+  series: SparkSeries,
+  horizon: ForecastHorizon,
+  bot: BotResult,
+): PriceForecast {
+  const days = FORECAST_HORIZONS[horizon].tradingDays;
+  const analysis = analyzePlayBitChannel(series);
+  const vol = dailyVolatility(series.closes);
+  const horizonScale = Math.sqrt(days / 20);
+
+  let bias = 0;
+  if (analysis?.regime === "above" || bot.signal === "buy") bias = 1;
+  else if (analysis?.regime === "below" || bot.signal === "sell") bias = -1;
+
+  const distanceBoost =
+    analysis != null ? Math.min(1.5, Math.abs(analysis.distancePct) / 8) : 0.5;
+  const expectedReturnPct = bias * (4 + distanceBoost) * horizonScale;
+  const bandWidthPct = vol * Math.sqrt(days) * 100 * 1.15 + 2;
+
+  return buildForecast(
+    horizon,
+    price,
+    expectedReturnPct,
+    bandWidthPct,
+    bot.confidence,
+  );
+}
+
 function consensusForecast(
   price: number,
   botForecasts: BotForecast[],
@@ -255,6 +286,8 @@ export function buildBotForecasts(
           return meanReversionForecast(price, resolved, horizon, bot);
         case "ml":
           return mlForecast(price, series, resolved, horizon, bot);
+        case "playbit":
+          return playBitForecast(price, series, horizon, bot);
         default:
           return technicalForecast(price, resolved, horizon, bot);
       }

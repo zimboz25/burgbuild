@@ -11,6 +11,11 @@ import {
 } from "@/components/stocks/price-chart";
 import { getSuggestionBotUpside } from "@/lib/engines/bot-valuation";
 import { getSma50Line } from "@/lib/engines/price-forecast";
+import {
+  getPlayBitChannelLines,
+  playBitRegimeLabel,
+  analyzePlayBitChannel,
+} from "@/lib/engines/playbit-ema";
 import type { ChartRange } from "@/lib/stocks/chart-range";
 import { chartRangeUsesIntraday } from "@/lib/stocks/chart-range";
 import type {
@@ -112,6 +117,11 @@ export function StockDetailPanel({
     series && !chartRangeUsesIntraday(chartRange) && series.closes.length >= 50
       ? getSma50Line(series.closes)
       : undefined;
+  const playbitLines =
+    series && !chartRangeUsesIntraday(chartRange)
+      ? getPlayBitChannelLines(series)
+      : null;
+  const playbit = series ? analyzePlayBitChannel(series) : null;
 
   return (
     <div className="space-y-6">
@@ -182,6 +192,11 @@ export function StockDetailPanel({
               projectionPath={chartProjectionPath}
               forecast={selectedHorizonForecast}
               sma50={sma50}
+              playbitEmaHigh={playbitLines?.emaHigh}
+              playbitEmaClose={playbitLines?.emaClose}
+              playbitRegimeLabel={
+                playbit ? playBitRegimeLabel(playbit.regime) : undefined
+              }
               showForecast={showForecastOnChart}
             />
             {showForecastOnChart && (
@@ -209,8 +224,12 @@ export function StockDetailPanel({
         />
       )}
 
-      <div className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-3 lg:grid-cols-6">
+      <div className="grid grid-cols-2 gap-3 text-sm sm:grid-cols-3 lg:grid-cols-4">
         <Metric label="RSI (14)" value={stock.signals.rsi14?.toFixed(1) ?? "—"} />
+        <Metric
+          label="PlayBit"
+          value={playbit ? playBitRegimeLabel(playbit.regime) : "—"}
+        />
         <Metric
           label="vs 50-day"
           value={
@@ -258,6 +277,14 @@ export function StockDetailPanel({
           value={
             stock.signals.fiftyTwoWeekHigh != null
               ? formatPrice(stock.signals.fiftyTwoWeekHigh, stock.currency, locale)
+              : "—"
+          }
+        />
+        <Metric
+          label="PB EMA close"
+          value={
+            playbit
+              ? formatPrice(playbit.emaClose, stock.currency, locale)
               : "—"
           }
         />

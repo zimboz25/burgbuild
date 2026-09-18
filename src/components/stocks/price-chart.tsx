@@ -21,6 +21,9 @@ interface PriceChartProps {
   projectionPath?: number[];
   forecast?: PriceForecast;
   sma50?: (number | null)[];
+  playbitEmaHigh?: (number | null)[];
+  playbitEmaClose?: (number | null)[];
+  playbitRegimeLabel?: string;
   height?: number;
   showForecast?: boolean;
 }
@@ -162,6 +165,9 @@ export function PriceChart({
   projectionPath = [],
   forecast,
   sma50,
+  playbitEmaHigh,
+  playbitEmaClose,
+  playbitRegimeLabel,
   height = 240,
   showForecast = true,
 }: PriceChartProps) {
@@ -181,7 +187,11 @@ export function PriceChart({
       showForecast && projectionPath.length > historyLength
         ? projectionPath.slice(historyLength - 1)
         : [];
-    const combined = [...trimmedHistory, ...forecastSegment.slice(1)];
+    const overlayExtras = [
+      ...(playbitEmaHigh ?? []).filter((value): value is number => value != null),
+      ...(playbitEmaClose ?? []).filter((value): value is number => value != null),
+    ];
+    const combined = [...trimmedHistory, ...forecastSegment.slice(1), ...overlayExtras];
     const splitIndex = trimmedHistory.length - 1;
     const min = Math.min(...combined);
     const max = Math.max(...combined);
@@ -263,26 +273,41 @@ export function PriceChart({
           }
         : null;
 
-    const smaPoints =
-      sma50 && sma50.length === history.length
-        ? sma50
-            .map((value, index) => {
-              const resolved = value ?? trimmedHistory[0];
-              const anchor = historyPoints[index];
-              if (!anchor) return null;
+    const mapOverlayLine = (values: (number | null)[] | undefined) => {
+      if (!values || values.length !== history.length) return null;
 
-              return {
-                x: anchor.x,
-                y:
-                  area.top +
-                  (1 - (resolved - min) / (max - min || 1)) *
-                    (area.bottom - area.top),
-                value: resolved,
-                timestamp: anchor.timestamp,
-                kind: "history" as const,
-              };
-            })
-            .filter((point) => point != null) as ChartPoint[]
+      return values
+        .map((value, index) => {
+          if (value == null) return null;
+          const anchor = historyPoints[index];
+          if (!anchor) return null;
+          return {
+            x: anchor.x,
+            y:
+              area.top +
+              (1 - (value - min) / (max - min || 1)) * (area.bottom - area.top),
+            value,
+            timestamp: anchor.timestamp,
+            kind: "history" as const,
+          };
+        })
+        .filter((point) => point != null) as ChartPoint[];
+    };
+
+    const smaPoints = mapOverlayLine(
+      sma50?.map((value) => value ?? trimmedHistory[0] ?? null) ?? undefined,
+    );
+    const playbitHighPoints = mapOverlayLine(playbitEmaHigh);
+    const playbitClosePoints = mapOverlayLine(playbitEmaClose);
+    const playbitFillPath =
+      playbitHighPoints &&
+      playbitClosePoints &&
+      playbitHighPoints.length > 1 &&
+      playbitClosePoints.length > 1
+        ? `${toPath(playbitHighPoints)} L${[...playbitClosePoints]
+            .reverse()
+            .map((point) => `${point.x},${point.y}`)
+            .join(" L")} Z`
         : null;
 
     const priceTicks = nicePriceTicks(min, max);
@@ -304,6 +329,9 @@ export function PriceChart({
       allPoints,
       bandPoints,
       smaPoints,
+      playbitHighPoints,
+      playbitClosePoints,
+      playbitFillPath,
       priceTicks,
       dateTicks,
       lastHistoryPoint: historyPoints.at(-1) ?? null,
@@ -315,6 +343,8 @@ export function PriceChart({
     projectionPath,
     forecast,
     sma50,
+    playbitEmaHigh,
+    playbitEmaClose,
     history,
     width,
     height,
@@ -330,6 +360,9 @@ export function PriceChart({
     allPoints,
     bandPoints,
     smaPoints,
+    playbitHighPoints,
+    playbitClosePoints,
+    playbitFillPath,
     priceTicks,
     dateTicks,
     lastHistoryPoint,
@@ -441,21 +474,46 @@ export function PriceChart({
           />
         )}
 
+        {playbitFillPath && (
+          <path d={playbitFillPath} fill="var(--chart-2)" fillOpacity="0.14" />
+        )}
+
+        {playbitHighPoints && playbitHighPoints.length > 1 && (
+          <path
+            d={toPath(playbitHighPoints)}
+            fill="none"
+            stroke="var(--chart-2)"
+            strokeOpacity="0.9"
+            strokeWidth="1.5"
+          />
+        )}
+
+        {playbitClosePoints && playbitClosePoints.length > 1 && (
+          <path
+            d={toPath(playbitClosePoints)}
+            fill="none"
+            stroke="var(--chart-4, var(--primary))"
+            strokeOpacity="0.85"
+            strokeWidth="1.5"
+            strokeDasharray="5 3"
+          />
+        )}
+
         {smaPoints && (
           <path
             d={toPath(smaPoints)}
             fill="none"
-            stroke="var(--chart-2)"
-            strokeOpacity="0.85"
-            strokeWidth="1.5"
-            strokeDasharray="4 3"
+            stroke="var(--muted-foreground)"
+            strokeOpacity="0.55"
+            strokeWidth="1.25"
+            strokeDasharray="2 3"
           />
         )}
 
         <path
           d={toPath(historyPoints)}
           fill="none"
-          stroke="var(--muted-foreground)"
+          stroke="var(--foreground)"
           strokeWidth="2"
         />
 
@@ -531,14 +589,20 @@ export function PriceChart({
         </span>
         <div className="flex flex-wrap gap-3">
           <span className="flex items-center gap-1">
-            <span className="h-0.5 w-4 bg-muted-foreground" /> History
+            <span className="h-0.5 w-4 bg-foreground" /> History
           </span>
           <span className="flex items-center gap-1">
             <span className="h-0.5 w-4 border-t-2 border-dashed border-emerald-400" /> Forecast
           </span>
+          {(playbitHighPoints || playbitClosePoints) && (
+            <span className="flex items-center gap-1">
+              <span className="h-2 w-4 rounded-sm bg-chart-2/40" /> PlayBit EMA
+              {playbitRegimeLabel ? ` · ${playbitRegimeLabel}` : ""}
+            </span>
+          )}
           {smaPoints && (
             <span className="flex items-center gap-1">
-              <span className="h-0.5 w-4 border-t border-dashed border-chart-2" /> SMA 50
+              <span className="h-0.5 w-4 border-t border-dashed border-muted-foreground" /> SMA 50
             </span>
           )}
         </div>

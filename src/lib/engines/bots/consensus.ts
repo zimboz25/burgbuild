@@ -3,13 +3,15 @@ import { analyzeTechnicalSignals } from "@/lib/engines/buy-timing";
 import { runMeanReversionBot } from "@/lib/engines/bots/mean-reversion-bot";
 import { runMlBot } from "@/lib/engines/bots/ml-bot";
 import { runMomentumBot } from "@/lib/engines/bots/momentum-bot";
+import { runPlayBitBot } from "@/lib/engines/bots/playbit-bot";
 import { runTechnicalBot } from "@/lib/engines/bots/technical-bot";
 
 const BOT_WEIGHTS: Record<BotResult["botId"], number> = {
-  technical: 0.3,
-  momentum: 0.25,
-  "mean-reversion": 0.25,
-  ml: 0.2,
+  technical: 0.25,
+  momentum: 0.2,
+  "mean-reversion": 0.2,
+  ml: 0.15,
+  playbit: 0.2,
 };
 
 function signalToScore(signal: BotSignal, confidence: number): number {
@@ -32,6 +34,7 @@ export function runAllBots(series: SparkSeries): BotResult[] {
     runMomentumBot(series, signals),
     runMeanReversionBot(series, signals),
     runMlBot(series, signals),
+    runPlayBitBot(series),
   ];
 }
 
@@ -67,4 +70,7 @@ export const BOT_LABELS: Record<BotResult["botId"], string> = {
   momentum: "Momentum",
   "mean-reversion": "Mean Reversion",
   ml: "ML Model",
+  playbit: "PlayBit EMA",
 };
+
+export const BOT_COUNT = 5;

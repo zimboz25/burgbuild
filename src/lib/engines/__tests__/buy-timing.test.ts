@@ -78,6 +78,7 @@ describe("buildBuyTimingSuggestion", () => {
         longName: "BHP Group Limited",
       },
       closes,
+      highs: closes.map((close) => close * 1.01),
       timestamps: makeTimestamps(closes.length),
     };
 
@@ -101,6 +102,7 @@ describe("buildBuyTimingSuggestion", () => {
         fiftyTwoWeekHigh: 70,
       },
       closes: oversoldCloses,
+      highs: oversoldCloses.map((close) => close * 1.01),
       timestamps: makeTimestamps(oversoldCloses.length),
     };
 
@@ -114,6 +116,7 @@ describe("buildBuyTimingSuggestion", () => {
         fiftyTwoWeekHigh: 195,
       },
       closes: expensiveCloses,
+      highs: expensiveCloses.map((close) => close * 1.01),
       timestamps: makeTimestamps(expensiveCloses.length),
     };
 

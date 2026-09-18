@@ -3,14 +3,21 @@ import {
   compareSuggestions,
   getBotAverageValuation,
 } from "@/lib/engines/bot-valuation";
-import type { BotId, ForecastHorizon } from "@/lib/types/stocks";
+import type {
+  BotId,
+  BuyTimingSuggestion,
+  ForecastHorizon,
+  ForecastOutlook,
+} from "@/lib/types/stocks";
 
 function makeOutlook(currentPrice: number, botPrices: number[]): ForecastOutlook {
   return {
     currentPrice,
     consensus: [],
     byBot: botPrices.map((expectedPrice, index) => ({
-      botId: (["technical", "momentum", "mean-reversion", "ml"] as BotId[])[index],
+      botId: (["technical", "momentum", "mean-reversion", "ml", "playbit"] as BotId[])[
+        index
+      ],
       botName: `Bot ${index + 1}`,
       horizons: [
         {
